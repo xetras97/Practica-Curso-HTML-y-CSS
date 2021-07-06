@@ -1,0 +1,106 @@
+/* VARIABLES */
+:root {
+    /* COLORES */
+    --green-color: #7acc2d;
+    --white-color: white;
+    --black-color: #313337;
+    /* ESPACIADO */
+    --space: 10px;
+    /* TIPOGRAFIA */
+    --normal: 12px;
+    /* BOX SHADOW */
+    --box: 0px 0 2px 1px #e6e5e9;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.products-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.products-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.products-grid {
+    display: grid;
+    max-width: 900px;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 300px);
+}
+
+.products-grid figure {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.products-grid__img--1 {
+    background-image: url("../img/ben1.png");
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1 / 2;
+}
+
+.products-grid__img--2 {
+    background-image: url("../img/ben2.png");
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+}
+
+.products-grid__img--3 {
+    background-image: url("../img/ben3.png");
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    width: 250px;
+    height: 250px;
+    align-self: center;
+    justify-self: center;
+}
+
+.text1 {
+    grid-column: 3 / 6;
+    grid-row: 1 / 2;
+}
+
+.text2 {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.text3 {
+    grid-column: 3 / 6;
+    grid-row: 3 / 4;
+}
+
+.products-grid__text h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.products-grid__text p {
+    font-size: 12px;
+}
+
+.products-grid__text {
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+}

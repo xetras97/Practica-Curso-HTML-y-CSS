@@ -1,0 +1,24 @@
+.products {
+    display: inherit;
+    height: auto;
+}
+
+.product {
+    margin-top: auto;
+}
+
+.main_section {
+    padding: 10%;
+}
+
+.card-container {
+    display: inherit;
+    height: auto;
+}
+
+.mentions__persons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+}

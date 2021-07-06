@@ -1,0 +1,61 @@
+/* VARIABLES */
+:root {
+    /* COLORES */
+    --green-color: #7acc2d;
+    --white-color: white;
+    --black-color: #313337;
+    /* ESPACIADO */
+    --space: 10px;
+    /* TIPOGRAFIA */
+    --normal: 12px;
+    /* BOX SHADOW */
+    --box: 0px 0 2px 1px #e6e5e9;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black-color);
+}
+
+.pay-confirmation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.catbox-logo {
+    width: 150px;
+    height: 150px;
+    background-image: url("../img/box_brand.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pay-confirmation h2 {
+    font-size: 17px;
+    color: var(--white-color);
+    padding: 10px;
+}
+
+.pay-confirmation a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
